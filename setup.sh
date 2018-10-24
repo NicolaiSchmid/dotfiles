@@ -15,6 +15,11 @@ bash ~/git/personal/dotfiles/symlink-setup.sh
 
 sudo chsh -s $(which zsh) $USER
 
+# Docker
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+newgrp docker
+
 # Minikube
 # http://blog.programmableproduction.com/2018/03/08/Archlinux-Setup-Minikube-using-KVM/
 sudo pacman -Sy libvirt qemu-headless ebtables dnsmasq docker-machine
