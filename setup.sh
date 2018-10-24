@@ -15,6 +15,13 @@ bash ~/git/personal/dotfiles/symlink-setup.sh
 
 sudo chsh -s $(which zsh) $USER
 
+# Minikube
+# http://blog.programmableproduction.com/2018/03/08/Archlinux-Setup-Minikube-using-KVM/
+sudo pacman -Sy libvirt qemu-headless ebtables dnsmasq docker-machine
+sudo systemctl enable libvirtd.service
+sudo systemctl enable virtlogd.service
+yaourt -Sy docker-machine-driver-kvm2  
+
 # GPG2 settings
 cat >> ~/.gnupg/gpg-agent.conf << EOF
 default-cache-ttl 600
