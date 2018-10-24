@@ -28,6 +28,10 @@ sudo systemctl enable libvirtd.service
 sudo systemctl enable virtlogd.service
 yaourt -Sy docker-machine-driver-kvm2  
 
+# KVM nested virt
+modprobe -r kvm_intel
+echo "options kvm_intel nested=1" | sudo tee -a /etc/modprobe.d/kvm.conf
+
 # GPG2 settings
 cat >> ~/.gnupg/gpg-agent.conf << EOF
 default-cache-ttl 600
