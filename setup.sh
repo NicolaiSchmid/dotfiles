@@ -19,6 +19,7 @@ sudo chsh -s $(which zsh) $USER
 sudo groupadd docker
 sudo gpasswd -a $USER docker
 newgrp docker
+sudo systemctl start docker
 
 # Minikube
 # http://blog.programmableproduction.com/2018/03/08/Archlinux-Setup-Minikube-using-KVM/
