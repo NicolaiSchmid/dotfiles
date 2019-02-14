@@ -30,7 +30,8 @@ sudo systemctl enable virtlogd.service
 yaourt -Sy docker-machine-driver-kvm2  
 
 # KVM nested virt
-modprobe -r kvm_intel
+sudo modprobe -r kvm_intel
+sudo modprobe kvm_intel nested=1
 echo "options kvm_intel nested=1" | sudo tee -a /etc/modprobe.d/kvm.conf
 
 # GPG2 settings
