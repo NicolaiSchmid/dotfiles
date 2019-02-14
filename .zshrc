@@ -46,3 +46,6 @@ source ~/.zinput
 unsetopt HIST_VERIFY
 
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
+
+# Git completion
+autoload -Uz compinit && compinit
