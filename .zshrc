@@ -19,7 +19,6 @@ setopt hist_verify
 setopt append_history
 setopt share_history # share command history data
 
-
 # generic colouriser
 GRC=`which grc`
 if [ "$TERM" != dumb ] && [ -n "$GRC" ]
@@ -40,47 +39,10 @@ export LESS_TERMCAP_so=$'\E[38;5;246m'    # begin standout-mode - info box
 export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[04;38;5;146m' # begin underline
 
-# tab completion
-#setopt noautomenu
+# input candies
+source ~/.zinput
 
-
-# arrow up searching
-autoload -U up-line-or-beginning-search
-autoload -U down-line-or-beginning-search
-zle -N up-line-or-beginning-search
-zle -N down-line-or-beginning-search
-bindkey "^[[A" up-line-or-beginning-search # Up
-bindkey "^[[B" down-line-or-beginning-search # Down
-
-# pos1, end, del
-bindkey "^[[2~" yank                    # Insert
-bindkey "^[[3~" delete-char             # Del
-bindkey "^[[5~" up-line-or-history      # PageUp
-bindkey "^[[6~" down-line-or-history    # PageDown
-bindkey "^[e"   expand-cmd-path         # C-e for expanding path of typed command.
-bindkey "^[[A"  up-line-or-search       # Up arrow for back-history-search.
-bindkey "^[[B"  down-line-or-search     # Down arrow for fwd-history-search.
-bindkey " "     magic-space             # Do history expansion on space.
-case "$TERM" in
-        linux|screen)
-                bindkey "^[[1~" beginning-of-line       # Pos1
-                bindkey "^[[4~" end-of-line             # End
-        ;;
-        *xterm*|(dt|k)term)
-                bindkey "^[[H"  beginning-of-line       # Pos1
-                bindkey "^[[F"  end-of-line             # End
-                bindkey "^[[7~" beginning-of-line       # Pos1
-                bindkey "^[[8~" end-of-line             # End
-        ;;
-        rxvt|Eterm)
-                bindkey "^[[7~" beginning-of-line       # Pos1
-                bindkey "^[[8~" end-of-line             # End
-        ;;
-esac
-
-
-
+# sudo !! double enter fix
+unsetopt HIST_VERIFY
 
 [[ -e ~/.profile ]] && emulate sh -c 'source ~/.profile'
-
-
