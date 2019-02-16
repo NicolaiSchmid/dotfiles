@@ -7,7 +7,7 @@ echo 'KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0664", GROUP="users", ATTRS{
 
 pacaur -Sy yarn docker git google-chrome yubikey-manager yubikey-personalization libu2f-host 
 yubikey-personalization-gui-git vivaldi kubectl minikube zsh visual-studio-code-bin spotify 
-slack-desktop insomnia telepresence-git
+slack-desktop insomnia telepresence-git antigen-git
 
 sudo systemctl enable pcscd.service
 

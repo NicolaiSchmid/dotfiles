@@ -49,3 +49,6 @@ unsetopt HIST_VERIFY
 
 # Git completion
 autoload -Uz compinit && compinit
+
+# Antigen
+source /usr/share/zsh/share/antigen.zsh
