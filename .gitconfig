@@ -102,8 +102,8 @@
 	prune = true
 [diff]
 	compactionHeuristic = true
-[remote "origin"]
-	fetch = +refs/heads/*:refs/remotes/origin/*
+#[remote "origin"]
+#	fetch = +refs/heads/*:refs/remotes/origin/*
 [stash]
 	showPatch = true
 
