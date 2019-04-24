@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo pacman -Sy
-sudo pacman -Sy base-devel yaourt pacaur curl dnsutils
+sudo pacman -Sy base-devel pacaur curl dnsutils go
 
 echo 'KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0664", GROUP="users", ATTRS{idVendor}=="2581", ATTRS{idProduct}=="f1d0"' | sudo tee /etc/udev/rules.d/10-security-key.rules
 
@@ -27,7 +27,7 @@ sudo systemctl enable docker
 sudo pacman -Sy libvirt qemu-headless ebtables dnsmasq docker-machine
 sudo systemctl enable libvirtd.service
 sudo systemctl enable virtlogd.service
-yaourt -Sy docker-machine-driver-kvm2  
+pacaur -Sy docker-machine-driver-kvm2  
 
 # KVM nested virt
 sudo modprobe -r kvm_intel
