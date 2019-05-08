@@ -52,3 +52,6 @@ autoload -Uz compinit && compinit
 
 # Antigen
 source /usr/share/zsh/share/antigen.zsh
+
+# The fuck
+eval $(thefuck --alias)
