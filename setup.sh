@@ -5,9 +5,7 @@ sudo pacman -Sy base-devel pacaur curl dnsutils go
 
 echo 'KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0664", GROUP="users", ATTRS{idVendor}=="2581", ATTRS{idProduct}=="f1d0"' | sudo tee /etc/udev/rules.d/10-security-key.rules
 
-pacaur -Sy yarn docker git google-chrome yubikey-manager yubikey-personalization libu2f-host 
-yubikey-personalization-gui-git vivaldi kubectl minikube zsh visual-studio-code-bin spotify 
-slack-desktop insomnia telepresence-git antigen-git kubernetes-helm-bin grc
+pacaur -Sy yarn docker git google-chrome yubikey-manager yubikey-personalization libu2f-host yubikey-personalization-gui-git vivaldi kubectl minikube zsh visual-studio-code-bin spotify slack-desktop insomnia telepresence-git antigen-git kubernetes-helm-bin grc keybase
 
 sudo systemctl enable pcscd.service
 
