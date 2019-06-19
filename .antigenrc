@@ -1,0 +1,7 @@
+
+# Antigen
+source /usr/share/zsh/share/antigen.zsh
+
+antigen bundle dbz/kube-aliases
+
+antigen apply
