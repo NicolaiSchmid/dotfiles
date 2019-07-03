@@ -79,3 +79,5 @@ alias fs="stat -f \"%z bytes\""
 
 # Default delete file with shred
 alias shred="shred -u"
+
+alias w="watch -n 1"
