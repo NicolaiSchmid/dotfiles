@@ -76,3 +76,6 @@ alias ungz="gunzip -k"
 
 # File size
 alias fs="stat -f \"%z bytes\""
+
+# Default delete file with shred
+alias shred="shred -u"
