@@ -81,3 +81,7 @@ alias fs="stat -f \"%z bytes\""
 alias shred="shred -u"
 
 alias w="watch -n 1"
+
+function cert() {
+    echo | openssl s_client -showcerts -servername $1 -connect $1:443 2>/dev/null | openssl x509 -inform pem -noout -text
+}
