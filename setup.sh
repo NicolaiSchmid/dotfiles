@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo pacman -Sy
-sudo pacman -Sy base-devel pacaur curl dnsutils go net-tools gnu-netcat traceroute wireshark-qt whois sqlitebrowser
+sudo pacman -Sy base-devel pacaur curl dnsutils go net-tools gnu-netcat traceroute wireshark-qt whois sqlitebrowser vim
 
 echo 'KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0664", GROUP="users", ATTRS{idVendor}=="2581", ATTRS{idProduct}=="f1d0"' | sudo tee /etc/udev/rules.d/10-security-key.rules
 
