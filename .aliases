@@ -87,3 +87,5 @@ function cert() {
 }
 
 alias vi="vim"
+
+alias a="ansible"

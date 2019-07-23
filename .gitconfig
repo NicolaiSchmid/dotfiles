@@ -110,9 +110,9 @@
 	name = Nicolai Schmid
 	signingkey = 4337AB1B
 [commit]
-	gpgsign = true
+	# gpgsign = true
 
 [tag]
-	gpgsign = true
+	# gpgsign = true
 [gpg]
 	program = gpg2
