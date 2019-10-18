@@ -115,3 +115,5 @@ alias a="ansible"
 
 alias k="kubectl"
 
+alias m="k -n maon-staging"
+alias r="k -n rook-ceph"
