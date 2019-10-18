@@ -112,3 +112,6 @@ function extract()      # Handy Extract Program
 alias vi="vim"
 
 alias a="ansible"
+
+alias k="kubectl"
+
