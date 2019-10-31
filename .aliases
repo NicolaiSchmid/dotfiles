@@ -112,6 +112,7 @@ function extract()      # Handy Extract Program
 }
 
 alias vi="vim"
+alias nano="vim"
 
 alias a="ansible"
 
