@@ -81,7 +81,7 @@ alias fs="stat -f \"%z bytes\""
 alias shred="shred -u"
 
 # Fix watch alias expansion
-alias w="watch -n 1 "
+alias ww="watch -n 1 "
 alias watch='watch '
 
 function cert() {

@@ -47,3 +47,8 @@ curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | 
 
 echo "Run gpg2 --card-edit"
 echo "Then in the interactive terminal run 'fetch'"
+
+
+# Python
+pip install -U pylint --user
+pip install -U autopep8 --user
