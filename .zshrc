@@ -1,7 +1,7 @@
 # Load our dotfiles like ~/.bash_prompt, etc…
 #   ~/.extra can be used for settings you don’t want to commit,
 #   Use it to configure your PATH, thus it being first in line.
-for file in ~/.{extra,bash_prompt,exports,aliases,functions,design,antigenrc}; do
+for file in ~/.{extra,bash_prompt,exports,aliases,functions,design}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
@@ -49,9 +49,6 @@ unsetopt HIST_VERIFY
 
 # Git completion
 autoload -Uz compinit && compinit
-
-# Antigen 
-source ~/.antigenrc
 
 # The fuck
 eval $(thefuck --alias)
