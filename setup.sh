@@ -1,11 +1,11 @@
 #!/bin/bash
 
 sudo pacman -Sy
-sudo pacman -Sy base-devel pacaur curl dnsutils go net-tools gnu-netcat traceroute wireshark-qt whois sqlitebrowser vim ansible
+sudo pacman -Sy base-devel pacaur curl dnsutils go net-tools gnu-netcat traceroute wireshark-qt whois sqlitebrowser vim ansible vagrant terraform
 
 echo 'KERNEL=="hidraw*", SUBSYSTEM=="hidraw", MODE="0664", GROUP="users", ATTRS{idVendor}=="2581", ATTRS{idProduct}=="f1d0"' | sudo tee /etc/udev/rules.d/10-security-key.rules
 
-pacaur -Sy yarn docker git google-chrome yubikey-manager yubikey-personalization libu2f-host yubikey-personalization-gui-git vivaldi kubectl minikube zsh visual-studio-code-bin spotify slack-desktop insomnia telepresence-git antigen-git kubernetes-helm-bin grc keybase robo3t-bin ttf-cascadia-code dive
+pacaur -Sy yarn docker git google-chrome yubikey-manager yubikey-personalization libu2f-host yubikey-personalization-gui-git vivaldi kubectl minikube zsh visual-studio-code-bin spotify slack-desktop insomnia telepresence-git antigen-git kubernetes-helm-bin grc keybase robo3t-bin ttf-cascadia-code dive ct
 
 # An installation of linux414-virtualbox-host-modules might be neccecary
 
