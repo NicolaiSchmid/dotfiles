@@ -2,7 +2,7 @@
 	a = add
 	r = reset
 	c = commit -m
-	up = pull
+	up = pull -r
 	p = push
 	s = status
 	sclone = clone --depth=1
