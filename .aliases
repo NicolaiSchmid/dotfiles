@@ -121,5 +121,6 @@ alias k="kubectl"
 alias m="k -n maon-staging"
 alias r="k -n rook-ceph"
 alias w="k -n wasc"
+alias v="k -n wasc-vms"
 
 alias pp="pino-pretty -c -l -i hostname,pid -t 'SYS:HH:MM:ss'"
