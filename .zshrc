@@ -52,3 +52,6 @@ autoload -Uz compinit && compinit
 
 # The fuck
 eval $(thefuck --alias)
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/bin/mc mc
