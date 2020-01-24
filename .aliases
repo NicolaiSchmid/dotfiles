@@ -111,6 +111,11 @@ function extract()      # Handy Extract Program
     fi
 }
 
+function pgrep()
+{
+    grep $1 | awk '{print $1}' 
+}
+
 alias vi="vim"
 alias nano="vim"
 
@@ -123,5 +128,6 @@ alias m="k -n maon-staging"
 alias r="k -n rook-ceph"
 alias w="k -n wasc"
 alias v="k -n wasc-vms"
+alias p="kubectl -n production"
 
 alias pp="pino-pretty -c -l -i hostname,pid -t 'SYS:HH:MM:ss'"
