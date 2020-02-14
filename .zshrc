@@ -6,6 +6,8 @@ for file in ~/.{extra,bash_prompt,exports,aliases,functions,design}; do
 done
 unset file
 
+export EDITOR=vim
+
 # History
 HISTFILE=~/.zsh_history
 HISTSIZE=100000000
