@@ -137,10 +137,10 @@ alias a="ansible"
 alias k="kubectl"
 alias kaf="kubectl apply -f"
 
-alias m="k -n maon-staging"
-alias r="k -n rook-ceph"
-alias w="k -n wasc"
-alias v="k -n wasc-vms"
 alias p="kubectl -n production"
+alias r="kubectl -n rook-ceph"
+alias w="kubectl -n wasc"
+alias v="kubectl -n wasc-vms"
+
 
 alias pp="pino-pretty -c -l -i hostname,pid -t 'SYS:HH:MM:ss'"
