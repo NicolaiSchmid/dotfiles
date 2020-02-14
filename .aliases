@@ -116,6 +116,19 @@ function pgrep()
     grep $1 | awk '{print $1}' 
 }
 
+function wascs()      # status of wasc platform
+{
+    echo "Frontend: $(curl -o /dev/null -s -w "%{http_code}\n" https://wasc.io/healthz)"
+    echo "Apis: $(curl -o /dev/null -s -w "%{http_code}\n" https://apis.wasc.io/healthz)"
+}
+
+
+function maons()      # status of maon platform
+{
+    echo "Frontend: $(curl -o /dev/null -s -w "%{http_code}\n" https://cloud.maon.eu/healthz)"
+    echo "Apis: $(curl -o /dev/null -s -w "%{http_code}\n" https://apis.cloud.maon.eu/healthz)"
+}
+
 alias vi="vim"
 alias nano="vim"
 
