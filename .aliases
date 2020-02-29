@@ -151,5 +151,5 @@ alias pp="pino-pretty -c -l -i hostname,pid -t 'SYS:HH:MM:ss'"
 alias ma="cd ~/git/maon/apis.maon.eu"
 alias mf="cd ~/git/maon/maon.eu"
 
-alias wa="cd ~/git/maon/apis.wasc.io"
-alias wf="cd ~/git/maon/wasc.io"
+alias wa="cd ~/git/wasc/apis.wasc.io"
+alias wf="cd ~/git/wasc/wasc.io"
