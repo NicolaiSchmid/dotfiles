@@ -153,3 +153,6 @@ alias mf="cd ~/git/maon/maon.eu"
 
 alias wa="cd ~/git/wasc/apis.wasc.io"
 alias wf="cd ~/git/wasc/wasc.io"
+
+# get work done
+alias go="open 'https://git.nicolaischmid.de/groups/wasc/-/issues?scope=all&utf8=%E2%9C%93&state=opened&milestone_title=v1.0.0-alpha.1'"
