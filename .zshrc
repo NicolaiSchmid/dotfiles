@@ -57,3 +57,9 @@ eval $(thefuck --alias)
 
 autoload -U +X bashcompinit && bashcompinit
 complete -o nospace -C /usr/bin/mc mc
+
+
+export KUBECONFIG=~/.kube/config          
+export DATASTORE_TYPE=kubernetes
+export PATH="${PATH}:${HOME}/.krew/bin"
+
