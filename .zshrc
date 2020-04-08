@@ -63,3 +63,6 @@ export KUBECONFIG=~/.kube/config
 export DATASTORE_TYPE=kubernetes
 export PATH="${PATH}:${HOME}/.krew/bin"
 
+
+
+export PATH=$(yarn global bin):$PATH
