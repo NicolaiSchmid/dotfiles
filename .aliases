@@ -20,6 +20,8 @@ alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.c
 
 alias ag='ag -f --hidden'
 
+alias gcc='gcc -Wall'
+
 ###
 # time to upgrade `ls`
 
