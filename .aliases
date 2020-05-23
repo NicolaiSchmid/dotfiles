@@ -22,6 +22,9 @@ alias ag='ag -f --hidden'
 
 alias gcc='gcc -Wall'
 
+# Less colours
+alias less='less -R'
+
 ###
 # time to upgrade `ls`
 
