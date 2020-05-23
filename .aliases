@@ -158,3 +158,16 @@ alias wf="cd ~/git/wasc/wasc.io"
 
 # get work done
 alias go="open 'https://git.nicolaischmid.de/groups/wasc/-/issues?scope=all&utf8=%E2%9C%93&state=opened&milestone_title=v1.0.0-alpha.1'"
+
+function wlo() 
+{
+    label=app.kubernetes.io/component=$1-wasc-io
+    kubectl -n wasc logs -l $label -c wasc-io | pp
+}
+
+
+function mlo() 
+{
+    label=app.kubernetes.io/component=$1-maon-eu
+    kubectl -n production logs -l $label -c maon-eu | pp
+}
