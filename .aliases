@@ -175,3 +175,5 @@ function mlo()
     label=app.kubernetes.io/component=$1-maon-eu
     kubectl -n production logs -l $label -c maon-eu | pp
 }
+
+alias ipi="~/git/personal/dotfiles/ip_info.sh"
