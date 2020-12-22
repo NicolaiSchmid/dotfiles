@@ -142,6 +142,7 @@ alias a="ansible"
 
 alias k="kubectl"
 alias kaf="kubectl apply -f"
+alias kdf="kubectl delete -f"
 
 alias p="kubectl -n production"
 alias r="kubectl -n rook-ceph"
