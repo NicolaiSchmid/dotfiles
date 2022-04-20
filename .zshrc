@@ -72,6 +72,8 @@ ZSH_CUSTOM=~/git/personal/dotfiles/ohzsh
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    git
+    nvm
     macos
     c_grc
     thefuck
@@ -105,5 +107,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Get the old zsh back
-source ~/.zshrc.pre-oh
+HISTSIZE=100000000
+SAVEHIST=100000000
+
+source ~/.aliases
