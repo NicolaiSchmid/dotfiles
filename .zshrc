@@ -77,6 +77,7 @@ plugins=(
     macos
     c_grc
     thefuck
+    kubectl
 )
 
 eval "$(fnm env --use-on-cd)"
