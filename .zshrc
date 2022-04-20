@@ -78,6 +78,7 @@ plugins=(
     c_grc
     thefuck
     kubectl
+    helm
 )
 
 eval "$(fnm env --use-on-cd)"
