@@ -73,11 +73,13 @@ ZSH_CUSTOM=~/git/personal/dotfiles/ohzsh
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     git
-    nvm
+    fnm
     macos
     c_grc
     thefuck
 )
+
+eval "$(fnm env --use-on-cd)"
 
 source $ZSH/oh-my-zsh.sh
 
