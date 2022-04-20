@@ -72,7 +72,8 @@ ZSH_CUSTOM=~/git/personal/dotfiles/ohzsh
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
     macos
-    c_grc    
+    c_grc
+    thefuck
 )
 
 source $ZSH/oh-my-zsh.sh
