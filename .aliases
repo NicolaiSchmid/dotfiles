@@ -14,12 +14,6 @@ alias cp='cp -v'
 
 alias chmox='chmod +x'
 
-alias where=which # sometimes i forget
-
-alias hosts='sudo $EDITOR /etc/hosts'   # yes I occasionally 127.0.0.1 twitter.com ;)
-
-alias ag='ag -f --hidden'
-
 alias gcc='gcc -Wall'
 
 # Less colours
@@ -43,11 +37,6 @@ alias ll='ls -alh'
 alias la='ls -A'
 alias l='ls -CF'
 
-###
-
-
-# `cat` with beautiful colors. requires: sudo easy_install -U Pygments
-alias c='pygmentize -O style=monokai -f console256 -g'
 
 ###
 # GIT STUFF
@@ -73,15 +62,8 @@ alias scan='nmap -sP'
 # Recursively delete `.DS_Store` files
 alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
 
-alias diskspace_report="df -P -kHl"
-alias free_diskspace_report="diskspace_report"
-
 # Shortcuts
 alias g="git"
-alias ungz="gunzip -k"
-
-# File size
-alias fs="stat -f \"%z bytes\""
 
 # Default delete file with shred
 alias shred="shred -u"
@@ -128,53 +110,22 @@ function wascs()      # status of wasc platform
     echo "Apis: $(curl -o /dev/null -s -w "%{http_code}\n" https://apis.wasc.io/healthz)"
 }
 
-
-function maons()      # status of maon platform
-{
-    echo "Frontend: $(curl -o /dev/null -s -w "%{http_code}\n" https://cloud.maon.eu/healthz)"
-    echo "Apis: $(curl -o /dev/null -s -w "%{http_code}\n" https://apis.cloud.maon.eu/healthz)"
-}
-
 alias vi="vim"
 alias nano="vim"
-
-alias a="ansible"
 
 alias k="kubectl"
 alias kaf="kubectl apply -f"
 alias kdf="kubectl delete -f"
 
-alias p="kubectl -n production"
 alias r="kubectl -n rook-ceph"
 alias w="kubectl -n wasc"
-alias v="kubectl -n wasc-vms"
-
 
 alias pp="pino-pretty -c -l -i hostname,pid -t 'SYS:HH:MM:ss'"
 
 
 
 # workdirs
-alias ma="cd ~/git/maon/apis.maon.eu"
-alias mf="cd ~/git/maon/maon.eu"
-
 alias wa="cd ~/git/wasc/apis.wasc.io"
 alias wf="cd ~/git/wasc/wasc.io"
-
-# get work done
-alias go="open 'https://git.nicolaischmid.de/groups/wasc/-/issues?scope=all&utf8=%E2%9C%93&state=opened&milestone_title=v1.0.0-alpha.1'"
-
-function wlo() 
-{
-    label=app.kubernetes.io/component=$1-wasc-io
-    kubectl -n wasc logs -l $label -c wasc-io | pp
-}
-
-
-function mlo() 
-{
-    label=app.kubernetes.io/component=$1-maon-eu
-    kubectl -n production logs -l $label -c maon-eu | pp
-}
 
 alias ipi="~/git/personal/dotfiles/ip_info.sh"
