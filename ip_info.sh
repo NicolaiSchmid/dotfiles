@@ -20,7 +20,10 @@ function valid_ip()
 
 input=$1
 
-if valid_ip $ip; then
+if [ -z "$input" ]
+then
+    ip=""
+elif valid_ip $input; then
     ip=$input
 else
     ip=$(dig +short $input)
