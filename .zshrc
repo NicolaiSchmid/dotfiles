@@ -104,4 +104,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Get the old zsh back
-source ./.zshrc.pre-oh
+source ~/.zshrc.pre-oh
