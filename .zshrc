@@ -71,6 +71,7 @@ ZSH_CUSTOM=~/git/personal/dotfiles/ohzsh
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    macos
     c_grc    
 )
 
