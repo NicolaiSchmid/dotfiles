@@ -60,28 +60,6 @@
 	tool = opendiff
 	renameLimit = 0
 
-# rewrites of repo paths
-#[url "git@github.com:"]
-#	insteadOf = "https://github.com/"
-#	pushInsteadOf = "github:"
-#	pushInsteadOf = "git://github.com/"
-#	pushInsteadOf = "https://github.com/"
-#
-#[url "git://github.com/"]
-#	insteadOf = "github:"
-#
-#[url "git@gist.github.com:"]
-#	pushInsteadOf = "gist:"
-#	pushInsteadOf = "git://gist.github.com/"
-#	
-#[url "git://gist.github.com/"]
-#	insteadOf = "gist:"
-
-# correct typos
-[help]
-	autocorrect = 1
-
-# push easily. http://stackoverflow.com/a/23918418/89484
 [push]
 	default = current
 	followTags = true
@@ -89,9 +67,6 @@
 # use separate file for username / github token / etc
 [include]
   path = ~/.gitconfig.local
-
-#[init]
-#	templatedir = ~/.git_template
 
 [filter "lfs"]
 	required = true
@@ -109,12 +84,7 @@
 [user]
 	email = nicolai@schmid.uno
 	name = Nicolai Schmid
-	signingkey = 4337AB1B
-[commit]
-	# gpgsign = true
 
-[tag]
-	# gpgsign = true
 [gpg]
 	program = gpg2
 [init]

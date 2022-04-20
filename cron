@@ -1,1 +1,0 @@
-3 * * * * nvm use $(nvm ls-remote | tail -n 1 | awk '{print $2}') --default
