@@ -128,4 +128,6 @@ alias wf="cd ~/git/wasc/wasc.io"
 
 alias wm="cd ~/git/wasc/mail"
 
+alias cc="cd ~/git/cosmo/cosma"
+
 alias ipi="~/git/personal/dotfiles/ip_info.sh"
