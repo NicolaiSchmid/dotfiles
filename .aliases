@@ -126,4 +126,6 @@ alias pp="pino-pretty -c -l -i hostname,pid -t 'SYS:HH:MM:ss'"
 alias wa="cd ~/git/wasc/apis.wasc.io"
 alias wf="cd ~/git/wasc/wasc.io"
 
+alias wm="cd ~/git/wasc/mail"
+
 alias ipi="~/git/personal/dotfiles/ip_info.sh"
