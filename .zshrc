@@ -42,7 +42,7 @@ ZSH_THEME="nicolai"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -115,3 +115,16 @@ HISTSIZE=100000000
 SAVEHIST=100000000
 
 source ~/.aliases
+
+function kall(){
+  for i in $(kubectl api-resources --verbs=list --namespaced -o name | grep -v "events.events.k8s.io" | grep -v "events" | sort | uniq); do
+    echo "Resource:" $i
+    
+    if [ -z "$1" ]
+    then
+        kubectl get --ignore-not-found ${i}
+    else
+        kubectl -n ${1} get --ignore-not-found ${i}
+    fi
+  done
+}
