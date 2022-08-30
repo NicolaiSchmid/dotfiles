@@ -35,7 +35,8 @@ alias grep='grep --color=auto'
 alias ls='gls -AFh ${colorflag} --group-directories-first'
 
 alias ld='ls -l | grep "^d"' # only directories
-alias ll='ls -alh'
+#alias ll='ls -alh'
+alias ll='exa -ahlg --git' 
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -134,3 +135,4 @@ alias ipi="~/git/personal/dotfiles/scripts/ip_info.sh"
 
 alias immo="~/git/personal/dotfiles/scripts/immo.sh"
 
+alias az_fire="~/git/personal/dotfiles/scripts/azure_firewall.sh"
