@@ -22,4 +22,4 @@ rent_sqm=${2// /%20}
 price=${3// /%20}
 
 
-echo "(($sqm * $rent_sqm * 12) / $price * 1000) * 100" | bc -l 
+echo "(($sqm * $rent_sqm * 12) / ($price * 1000)) * 100" | bc -l 
